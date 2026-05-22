@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aksoy Prime Equity | Forex & Financial Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">Aksoy <span class="accent">Prime Equity</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"   class="nav-link" data-tr="Hakkımda"      data-en="About">Hakkımda</a></li>
+        <li><a href="#stats"   class="nav-link" data-tr="İstatistikler" data-en="Statistics">İstatistikler</a></li>
+        <li><a href="#markets" class="nav-link" data-tr="Piyasalar"     data-en="Markets">Piyasalar</a></li>
+        <li><a href="#contact" class="nav-link" data-tr="İletişim"      data-en="Contact">İletişim</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btnTR" onclick="setLang('tr')">TR</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" id="btnEN" onclick="setLang('en')">EN</button>
+        </div>
+        <a href="#contact" class="cta-btn" data-tr="İletişim" data-en="Contact">İletişim</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span data-tr="Piyasaları" data-en="Master the">Piyasaları</span><br />
+        <span class="gradient-text" data-tr="Domine Et" data-en="Markets">Domine Et</span>
+      </h1>
+      <p class="hero-sub"
+         data-tr="Profesyonel Forex ve Emtia analizleri ile portföyünü büyüt. Disiplinli strateji, kanıtlanmış sonuçlar."
+         data-en="Grow your portfolio with professional Forex and commodity analysis. Disciplined strategy, proven results.">
+        Profesyonel Forex ve Emtia analizleri ile portföyünü büyüt. Disiplinli strateji, kanıtlanmış sonuçlar.
+      </p>
+      <div class="hero-actions">
+        <a href="#about"   class="btn-primary" data-tr="Hakkımda"   data-en="About Me">Hakkımda</a>
+        <a href="#contact" class="btn-ghost"   data-tr="İletişime Geç" data-en="Get in Touch">İletişime Geç</a>
+      </div>
+    </div>
+
+    <div class="hero-ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <span class="tick down">GBP/USD <em>1.2701</em> -0.08%</span>
+        <span class="tick up">XAU/USD <em>2 341.5</em> +0.54%</span>
+        <span class="tick up">USD/JPY <em>157.22</em> +0.21%</span>
+        <span class="tick up">NAS100 <em>19 842</em> +0.44%</span>
+        <span class="tick up">US30 <em>39 150</em> +0.31%</span>
+        <span class="tick down">GBP/JPY <em>199.84</em> -0.14%</span>
+        <span class="tick down">GBP/USD <em>1.2701</em> -0.08%</span>
+        <span class="tick up">XAU/USD <em>2 341.5</em> +0.54%</span>
+        <span class="tick up">USD/JPY <em>157.22</em> +0.21%</span>
+        <span class="tick up">NAS100 <em>19 842</em> +0.44%</span>
+        <span class="tick up">US30 <em>39 150</em> +0.31%</span>
+        <span class="tick down">GBP/JPY <em>199.84</em> -0.14%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-tag" data-tr="— Hakkımda" data-en="— About Me">— Hakkımda</span>
+          <h2 data-tr="Piyasalara Hakim<br/>Bir Yaklaşım" data-en="A Dominant<br/>Market Approach">
+            Piyasalara Hakim<br />Bir Yaklaşım
+          </h2>
+          <p data-tr="[Adınız] — 7 yılı aşkın deneyimiyle Forex, Emtia ve Endeks piyasalarında aktif olarak işlem yapan bir profesyonel trader. Teknik analiz, risk yönetimi ve piyasa psikolojisini birleştiren özgün bir metodoloji kullanıyorum."
+             data-en="[Your Name] — A professional trader with over 7 years of experience actively trading Forex, Commodity, and Index markets. I use a unique methodology combining technical analysis, risk management, and market psychology.">
+            [Adınız] — 7 yılı aşkın deneyimiyle Forex, Emtia ve Endeks piyasalarında aktif olarak işlem yapan bir profesyonel trader. Teknik analiz, risk yönetimi ve piyasa psikolojisini birleştiren özgün bir metodoloji kullanıyorum.
+          </p>
+          <div class="about-tags">
+            <span class="tag">ICT / Smart Money</span>
+            <span class="tag">Price Action</span>
+            <span class="tag">Risk Management</span>
+            <span class="tag">Supply & Demand</span>
+          </div>
+        </div>
+        <div class="about-visual reveal delay-1">
+          <div class="profile-card">
+            <!-- ==========================================
+                 FOTO 1 — Profil Fotoğrafı
+                 Dosya adı: foto1.jpg
+                 Klasör: web/foto1.jpg
+                 Önerilen boyut: 400x400px (kare)
+            =========================================== -->
+            <div class="profile-img-wrap">
+              <img src="foto1.jpg" alt="Profil Fotoğrafı" class="profile-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="profile-placeholder" style="display:none;">
+                <span class="profile-initials">[AD]</span>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h3 data-tr="[Adınız Soyadınız]" data-en="[Your Full Name]">[Adınız Soyadınız]</h3>
+              <p data-tr="Profesyonel Forex Trader" data-en="Professional Forex Trader">Profesyonel Forex Trader</p>
+              <div class="profile-badges">
+                <span class="badge-item">📍 <span data-tr="İstanbul, TR" data-en="Istanbul, TR">İstanbul, TR</span></span>
+                <span class="badge-item">⏱ <span data-tr="7+ Yıl Deneyim" data-en="7+ Years Experience">7+ Yıl Deneyim</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section stats-section" id="stats">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-tr="— Performans" data-en="— Performance">— Performans</span>
+        <h2 data-tr="Rakamlar Konuşuyor" data-en="Numbers Speak">Rakamlar Konuşuyor</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <span class="stat-number" data-count="78">0</span><span class="stat-unit">%</span>
+          <p data-tr="Kazanma Oranı" data-en="Win Rate">Kazanma Oranı</p>
+        </div>
+        <div class="stat-card reveal delay-1">
+          <span class="stat-number" data-count="1240">0</span><span class="stat-unit">+</span>
+          <p data-tr="Tamamlanan İşlem" data-en="Completed Trades">Tamamlanan İşlem</p>
+        </div>
+        <div class="stat-card reveal delay-2">
+          <span class="stat-number" data-count="3">0</span><span class="stat-unit">:1</span>
+          <p data-tr="Ortalama R:R" data-en="Average R:R">Ortalama R:R</p>
+        </div>
+        <div class="stat-card reveal delay-3">
+          <span class="stat-number" data-count="7">0</span><span class="stat-unit">+</span>
+          <p data-tr="Yıl Deneyim" data-en="Years Experience">Yıl Deneyim</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETS -->
+  <section class="section markets-section" id="markets">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-tr="— Piyasalar" data-en="— Markets">— Piyasalar</span>
+        <h2 data-tr="Hangi Piyasalarda<br/>İşlem Yapıyorum?" data-en="Which Markets<br/>Do I Trade?">
+          Hangi Piyasalarda<br />İşlem Yapıyorum?
+        </h2>
+      </div>
+      <div class="markets-grid">
+        <div class="market-card reveal">
+          <div class="market-top">
+            <span class="market-pair">GBP/USD</span>
+            <span class="market-tag up" data-tr="Aktif" data-en="Active">Aktif</span>
+          </div>
+          <span class="market-name" data-tr="Forex Majörler" data-en="Forex Majors">Forex Majörler</span>
+        </div>
+        <div class="market-card reveal delay-1">
+          <div class="market-top">
+            <span class="market-pair">XAU/USD</span>
+            <span class="market-tag up" data-tr="Aktif" data-en="Active">Aktif</span>
+          </div>
+          <span class="market-name" data-tr="Altın & Emtia" data-en="Gold & Commodities">Altın & Emtia</span>
+        </div>
+        <div class="market-card reveal delay-2">
+          <div class="market-top">
+            <span class="market-pair">NAS100</span>
+            <span class="market-tag up" data-tr="Aktif" data-en="Active">Aktif</span>
+          </div>
+          <span class="market-name" data-tr="Endeksler" data-en="Indices">Endeksler</span>
+        </div>
+        <div class="market-card reveal delay-3">
+          <div class="market-top">
+            <span class="market-pair">US30 / DJI</span>
+            <span class="market-tag up" data-tr="Aktif" data-en="Active">Aktif</span>
+          </div>
+          <span class="market-name" data-tr="Dow Jones" data-en="Dow Jones">Dow Jones</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <span class="section-tag" data-tr="— İletişim" data-en="— Contact">— İletişim</span>
+          <h2 data-tr="Seninle Çalışmaya<br/>Hazırım" data-en="Ready to Work<br/>With You">
+            Seninle Çalışmaya<br />Hazırım
+          </h2>
+          <p data-tr="Sorularını ve işbirliği tekliflerini aşağıdaki forma ya da e-posta ile iletebilirsin."
+             data-en="You can send your questions and collaboration proposals via the form below or by email.">
+            Sorularını ve işbirliği tekliflerini aşağıdaki forma ya da e-posta ile iletebilirsin.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:info@aksoyprimeequity.com" class="contact-link">
+              <span class="cl-icon">◎</span>
+              <span data-tr="E-posta" data-en="Email">E-posta</span>: <strong>info@aksoyprimeequity.com</strong>
+            </a>
+            <a href="https://www.linkedin.com/in/[linkedin-kullanici-adi]" target="_blank" class="contact-link">
+              <span class="cl-icon">in</span>
+              <span>LinkedIn: <strong>[Adınız Soyadınız]</strong></span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-1" id="contactForm">
+          <div class="form-group">
+            <label data-tr="Adınız" data-en="Your Name">Adınız</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label data-tr="E-posta" data-en="Email">E-posta</label>
+            <input type="email" required />
+          </div>
+          <div class="form-group">
+            <label data-tr="Konu" data-en="Subject">Konu</label>
+            <select>
+              <option data-tr="İşbirliği" data-en="Collaboration">İşbirliği</option>
+              <option data-tr="Genel Soru" data-en="General Inquiry">Genel Soru</option>
+              <option data-tr="Diğer" data-en="Other">Diğer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-tr="Mesajınız" data-en="Your Message">Mesajınız</label>
+            <textarea rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full" data-tr="Gönder" data-en="Send Message">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">▲</span>
+            <span class="logo-text">Aksoy <span class="accent">Prime Equity</span></span>
+          </div>
+          <p data-tr="Disiplinli trade, sürdürülebilir başarı." data-en="Disciplined trading, sustainable success.">
+            Disiplinli trade, sürdürülebilir başarı.
+          </p>
+        </div>
+        <div class="footer-disclaimer">
+          <p data-tr="Risk Uyarısı: Forex ve CFD işlemleri yüksek risk içerir. Yatırımlarınızın tamamını kaybedebilirsiniz. Bu site yatırım tavsiyesi vermez."
+             data-en="Risk Warning: Forex and CFD trading involves high risk. You may lose all your investments. This site does not provide investment advice.">
+            Risk Uyarısı: Forex ve CFD işlemleri yüksek risk içerir. Yatırımlarınızın tamamını kaybedebilirsiniz. Bu site yatırım tavsiyesi vermez.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Aksoy Prime Equity. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></span>
+        <div class="footer-links">
+          <a href="#" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</a>
+          <a href="#" data-tr="Kullanım Koşulları" data-en="Terms of Use">Kullanım Koşulları</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
