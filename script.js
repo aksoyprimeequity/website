@@ -5,6 +5,7 @@ let currentLang = 'en';
 
 function setLang(lang) {
   currentLang = lang;
+  localStorage.setItem('lang', lang);
   document.getElementById('btnTR').classList.toggle('active', lang === 'tr');
   document.getElementById('btnEN').classList.toggle('active', lang === 'en');
 
@@ -188,4 +189,4 @@ document.addEventListener('keydown', e => {
   }
 });
 
-setLang('en');
+setLang(localStorage.getItem('lang') || 'en');
