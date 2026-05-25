@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media | Aksoy Prime Equity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .research-page { min-height: 100vh; padding-top: 6rem; }
+    .research-simple {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: calc(100vh - 10rem);
+      padding: 8rem 0 6rem;
+    }
+    .research-simple-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 2.2rem) !important;
+      font-weight: 700;
+      color: #f0f0f0;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      max-width: 720px;
+      margin: 1rem 0 3rem;
+    }
+    .launching-big {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1rem, 2vw, 1.4rem) !important;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      opacity: 0.7;
+      margin-top: 0.5rem;
+    }
+    .nav-link-research { color: #a0a0a0 !important; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">Aksoy <span class="accent">Prime Equity</span></span>
+      </a>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btnTR" onclick="setLang('tr')">TR</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" id="btnEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about"   class="nav-link" data-tr="Hakkımızda" data-en="About">Hakkımızda</a></li>
+        <li><a href="index.html#markets" class="nav-link" data-tr="Piyasalar"  data-en="Markets">Piyasalar</a></li>
+        <li><a href="research.html"     class="nav-link nav-link-research" data-tr="Araştırma"  data-en="Research">Research</a></li>
+        <li><a href="performance.html"  class="nav-link nav-link-research" data-tr="Performans" data-en="Performance">Performance</a></li>
+        <li><a href="media.html"        class="nav-link nav-link-research" data-tr="Medya"      data-en="Media">Media</a></li>
+        <li><a href="index.html#contact" class="nav-link" data-tr="İletişim"   data-en="Contact">İletişim</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MEDIA CONTENT -->
+  <div class="research-page">
+    <div class="container research-simple">
+      <p class="section-tag">— Media</p>
+      <h2 class="research-simple-heading"
+          data-tr="Küresel piyasalarda işlem özetleri, piyasa yorumları, eğitim içerikleri ve görsel bakış açıları."
+          data-en="Trading recaps, market commentary, educational content, and visual insights across global markets.">
+        Trading recaps, market commentary, educational content, and visual insights across global markets.
+      </h2>
+      <div class="launching-big">Launching Soon</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">▲</span>
+            <span class="logo-text">Aksoy <span class="accent">Prime Equity</span></span>
+          </div>
+        </div>
+        <div class="footer-disclaimer">
+          <p data-tr="Risk Uyarısı: Forex ve CFD işlemleri yüksek risk içerir."
+             data-en="Risk Warning: Forex and CFD trading involves high risk.">
+            Risk Warning: Forex and CFD trading involves high risk.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Aksoy Prime Equity. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">All rights reserved.</span></span>
+        <div class="footer-links">
+          <a href="#" onclick="openModal('modalPrivacy'); return false;" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Privacy Policy</a>
+          <a href="#" onclick="openModal('modalTerms'); return false;" data-tr="Kullanım Koşulları" data-en="Terms of Use">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: Gizlilik Politikası / Privacy Policy -->
+  <div class="modal-overlay" id="modalPrivacy" onclick="handleOverlayClick(event, 'modalPrivacy')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modalPrivacy')">&times;</button>
+      <div class="lang-tr">
+        <h3 class="modal-title">Gizlilik Politikası</h3>
+        <p class="modal-date">Son Güncelleme: Mayıs 2026</p>
+        <p>Aksoy Prime Equity olarak ziyaretçilerimizin gizliliğine önem veriyoruz.</p>
+        <h4>Toplanan Bilgiler</h4>
+        <ul><li>İsim</li><li>E-posta adresi</li><li>Mesaj içeriği</li></ul>
+        <h4>Veri Güvenliği</h4>
+        <p>Veriler üçüncü taraflarla satılmaz veya paylaşılmaz.</p>
+        <h4>İletişim</h4>
+        <p><a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+      <div class="lang-en">
+        <h3 class="modal-title">Privacy Policy</h3>
+        <p class="modal-date">Last Updated: May 2026</p>
+        <p>At Aksoy Prime Equity, we value the privacy of our visitors.</p>
+        <h4>Information Collected</h4>
+        <ul><li>Name</li><li>Email address</li><li>Message content</li></ul>
+        <h4>Data Security</h4>
+        <p>Data is not sold or shared with third parties.</p>
+        <h4>Contact</h4>
+        <p><a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Kullanım Koşulları / Terms of Use -->
+  <div class="modal-overlay" id="modalTerms" onclick="handleOverlayClick(event, 'modalTerms')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modalTerms')">&times;</button>
+      <div class="lang-tr">
+        <h3 class="modal-title">Kullanım Koşulları</h3>
+        <p class="modal-date">Son Güncelleme: Mayıs 2026</p>
+        <p>Aksoy Prime Equity web sitesini kullanan tüm ziyaretçiler aşağıdaki koşulları kabul etmiş sayılır.</p>
+        <h4>Risk Uyarısı</h4>
+        <p>Forex, CFD, emtia ve endeks işlemleri yüksek risk içerir.</p>
+        <h4>İletişim</h4>
+        <p><a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+      <div class="lang-en">
+        <h3 class="modal-title">Terms of Use</h3>
+        <p class="modal-date">Last Updated: May 2026</p>
+        <p>All visitors using the Aksoy Prime Equity website are deemed to have accepted the following terms.</p>
+        <h4>Risk Warning</h4>
+        <p>Forex, CFD, commodity, and index trading involves high risk.</p>
+        <h4>Contact</h4>
+        <p><a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
