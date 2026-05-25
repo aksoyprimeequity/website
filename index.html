@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aksoy Prime Equity | Forex & Financial Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">Aksoy <span class="accent">Prime Equity</span></span>
+      </a>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btnTR" onclick="setLang('tr')">TR</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" id="btnEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"          class="nav-link" data-tr="Hakkımızda" data-en="About">Hakkımızda</a></li>
+        <li><a href="#markets"        class="nav-link" data-tr="Piyasalar"  data-en="Markets">Piyasalar</a></li>
+        <li><a href="#contact"        class="nav-link" data-tr="İletişim"   data-en="Contact">İletişim</a></li>
+        <li><a href="research.html"   class="nav-link nav-link-research">Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text" data-tr="Profesyonel Perspektif" data-en="Professional Perspective">Profesyonel Perspektif</span>
+      </h1>
+      <p class="hero-sub"
+         data-tr="Aksoy Prime Equity; likidite temelli piyasa yaklaşımı, disiplinli risk yönetimi ve stratejik analiz anlayışıyla piyasa araştırmaları, proprietary trading ve stratejik sermaye yönetimi odağında profesyonel bakış açısı sunmaktadır."
+         data-en="Aksoy Prime Equity delivers a professional perspective focused on market research, proprietary trading, and strategic capital management — through a liquidity-based market approach, disciplined risk management, and strategic analysis.">
+        Aksoy Prime Equity; likidite temelli piyasa yaklaşımı, disiplinli risk yönetimi ve stratejik analiz anlayışıyla piyasa araştırmaları, proprietary trading ve stratejik sermaye yönetimi odağında profesyonel bakış açısı sunmaktadır.
+      </p>
+      <div class="hero-actions">
+        <a href="#about"   class="btn-ghost"    data-tr="Hakkımızda"   data-en="About Us">Hakkımızda</a>
+        <a href="#contact" class="btn-primary"  data-tr="İletişime Geç" data-en="Get in Touch">İletişime Geç</a>
+      </div>
+    </div>
+
+    <div class="hero-ticker">
+      <div class="tradingview-widget-container" style="height:46px;">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            { "proName": "FX:GBPUSD",       "title": "GBP/USD"  },
+            { "proName": "TVC:GOLD",         "title": "XAU/USD"  },
+            { "proName": "FOREXCOM:SPXUSD",  "title": "S&P 500"  },
+            { "proName": "FOREXCOM:NSXUSD",  "title": "NAS100"   },
+            { "proName": "FOREXCOM:DJI",     "title": "US30/DJI" },
+            { "proName": "FX:EURUSD",        "title": "EUR/USD"  },
+            { "proName": "TVC:SILVER",       "title": "XAG/USD"  },
+            { "proName": "TVC:USOIL",        "title": "Petrol"   },
+            { "proName": "BITSTAMP:BTCUSD",  "title": "BTC/USD"  },
+            { "proName": "FX:USDJPY",        "title": "USD/JPY"  }
+          ],
+          "showSymbolLogo": false,
+          "isTransparent": true,
+          "displayMode": "adaptive",
+          "colorTheme": "dark",
+          "locale": "tr"
+        }
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-tag" data-tr="— Hakkımızda" data-en="— About Us">— Hakkımızda</span>
+          <h2 data-tr="Piyasalara Hakim<br/>Bir Yaklaşım" data-en="A Dominant<br/>Market Approach">
+            Piyasalara Hakim<br />Bir Yaklaşım
+          </h2>
+          <p data-tr="Aksoy Prime Equity; disiplinli işlem yönetimi, likidite temelli piyasa yaklaşımı ve veri odaklı analiz anlayışı üzerine inşa edilmiş bağımsız bir trading, stratejik sermaye yönetimi ve piyasa araştırma markasıdır."
+             data-en="Aksoy Prime Equity is an independent trading, strategic capital management, and market research brand built on disciplined trade management, a liquidity-based market approach, and data-driven analysis.">
+            Aksoy Prime Equity; disiplinli işlem yönetimi, likidite temelli piyasa yaklaşımı ve veri odaklı analiz anlayışı üzerine inşa edilmiş bağımsız bir trading, stratejik sermaye yönetimi ve piyasa araştırma markasıdır.
+          </p>
+          <p data-tr="Forex, Altın, Endeksler ve küresel finans ekosisteminde stratejik analiz, profesyonel değerlendirmeler ve modern proprietary trading prensiplerine dayalı yaklaşım sunmayı hedeflemektedir."
+             data-en="It aims to deliver strategic analysis, professional assessments, and approaches based on modern proprietary trading principles across Forex, Gold, Indices, and the global financial ecosystem.">
+            Forex, Altın, Endeksler ve küresel finans ekosisteminde stratejik analiz, profesyonel değerlendirmeler ve modern proprietary trading prensiplerine dayalı yaklaşım sunmayı hedeflemektedir.
+          </p>
+          <p data-tr="Veriye dayalı analiz anlayışını sürdürülebilirlik ve etkin risk yönetimi ile birleştiren Aksoy Prime Equity; kısa vadeli spekülasyondan ziyade uzun vadeli istikrar, disiplin, stratejik bakış açısı ve sermayenin sürdürülebilir şekilde büyütülmesini ön planda tutmaktadır."
+             data-en="Combining a data-driven analysis approach with sustainability and effective risk management, Aksoy Prime Equity prioritizes long-term stability, discipline, strategic perspective, and sustainable capital growth over short-term speculation.">
+            Veriye dayalı analiz anlayışını sürdürülebilirlik ve etkin risk yönetimi ile birleştiren Aksoy Prime Equity; kısa vadeli spekülasyondan ziyade uzun vadeli istikrar, disiplin, stratejik bakış açısı ve sermayenin sürdürülebilir şekilde büyütülmesini ön planda tutmaktadır.
+          </p>
+          <p data-tr="Profesyonellik, şeffaflık ve sürekli gelişim ilkelerini temel alan marka; küresel trading ve finans ekosisteminde güvenilir ve saygın bir konum oluşturmayı amaçlamaktadır."
+             data-en="Grounded in the principles of professionalism, transparency, and continuous improvement, the brand aims to establish a trusted and reputable position within the global trading and finance ecosystem.">
+            Profesyonellik, şeffaflık ve sürekli gelişim ilkelerini temel alan marka; küresel trading ve finans ekosisteminde güvenilir ve saygın bir konum oluşturmayı amaçlamaktadır.
+          </p>
+        </div>
+        <div class="about-visual reveal delay-1">
+          <div class="profile-card">
+            <!-- ==========================================
+                 FOTO 1 — Profil Fotoğrafı
+                 Dosya adı: foto1.jpg
+                 Klasör: web/foto1.jpg
+                 Önerilen boyut: 400x400px (kare)
+            =========================================== -->
+            <div class="profile-img-wrap">
+              <img src="foto1.jpg" alt="Profil Fotoğrafı" class="profile-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="profile-placeholder" style="display:none;">
+                <span class="profile-initials">[AD]</span>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h3 data-tr="M. Berke Aksoy" data-en="M. Berke Aksoy">M. Berke Aksoy</h3>
+              <p data-tr="Founder & Lead Trader" data-en="Founder & Lead Trader">Founder & Lead Trader</p>
+              <div class="profile-badges">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETS -->
+  <section class="section markets-section" id="markets">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-tr="— Piyasalar" data-en="— Markets">— Piyasalar</span>
+        <h2 data-tr="Markets | Focus On" data-en="Markets | Focus On">
+          Markets | Focus On
+        </h2>
+      </div>
+      <div class="markets-grid">
+        <div class="market-card reveal">
+          <div class="market-top">
+            <span class="market-pair">GBP / USD</span>
+          </div>
+          <span class="market-name" data-tr="Forex Majörler" data-en="Forex Majors">Forex Majörler</span>
+        </div>
+        <div class="market-card reveal delay-1">
+          <div class="market-top">
+            <span class="market-pair">GOLD / GC</span>
+          </div>
+          <span class="market-name" data-tr="Emtia" data-en="Commodities">Emtia</span>
+        </div>
+        <div class="market-card reveal delay-2">
+          <div class="market-top">
+            <span class="market-pair">NASDAQ / NQ</span>
+          </div>
+          <span class="market-name" data-tr="Endeksler / Vadeli İşlemler" data-en="Indices / Futures">Endeksler / Vadeli İşlemler</span>
+        </div>
+        <div class="market-card reveal delay-3">
+          <div class="market-top">
+            <span class="market-pair">DOW JONES / YM</span>
+          </div>
+          <span class="market-name" data-tr="Endeksler / Vadeli İşlemler" data-en="Indices / Futures">Endeksler / Vadeli İşlemler</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <span class="section-tag" data-tr="— İletişim" data-en="— Contact">— İletişim</span>
+          <p data-tr="Sorularınız için formu doldurarak iletişime geçebilirsiniz."
+             data-en="You can get in touch by filling out the form for your questions.">
+            Sorularınız için formu doldurarak iletişime geçebilirsiniz.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:berke@aksoyprimeequity.com" class="contact-link">
+              <span class="cl-icon">✉</span>
+              <span><span data-tr="E-posta" data-en="Email">E-posta</span>: <strong>berke@aksoyprimeequity.com</strong></span>
+            </a>
+            <a href="https://www.linkedin.com/in/mberkeaksoy" target="_blank" class="contact-link">
+              <span class="cl-icon">in</span>
+              <span>LinkedIn: <strong>M. Berke Aksoy</strong></span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-1" id="contactForm" action="https://formspree.io/f/mjgzoyzp" method="POST">
+          <div class="form-group">
+            <label data-tr="Adınız" data-en="Your Name">Adınız</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="form-group">
+            <label data-tr="E-posta" data-en="Email">E-posta</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label data-tr="Konu" data-en="Subject">Konu</label>
+            <select name="subject">
+              <option data-tr="İşbirliği" data-en="Collaboration">İşbirliği</option>
+              <option data-tr="Genel Soru" data-en="General Inquiry">Genel Soru</option>
+              <option data-tr="Diğer" data-en="Other">Diğer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-tr="Mesajınız" data-en="Your Message">Mesajınız</label>
+            <textarea name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full" data-tr="Gönder" data-en="Send Message">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">▲</span>
+            <span class="logo-text">Aksoy <span class="accent">Prime Equity</span></span>
+          </div>
+        </div>
+        <div class="footer-disclaimer">
+          <p data-tr="Risk Uyarısı: Forex ve CFD işlemleri yüksek risk içerir."
+             data-en="Risk Warning: Forex and CFD trading involves high risk.">
+            Risk Uyarısı: Forex ve CFD işlemleri yüksek risk içerir.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Aksoy Prime Equity. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></span>
+        <div class="footer-links">
+          <a href="#" onclick="openModal('modalPrivacy'); return false;" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</a>
+          <a href="#" onclick="openModal('modalTerms'); return false;" data-tr="Kullanım Koşulları" data-en="Terms of Use">Kullanım Koşulları</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: Gizlilik Politikası / Privacy Policy -->
+  <div class="modal-overlay" id="modalPrivacy" onclick="handleOverlayClick(event, 'modalPrivacy')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modalPrivacy')">&times;</button>
+
+      <div class="lang-tr">
+        <h3 class="modal-title">Gizlilik Politikası</h3>
+        <p class="modal-date">Son Güncelleme: Mayıs 2026</p>
+        <p>Aksoy Prime Equity olarak ziyaretçilerimizin gizliliğine önem veriyoruz. Bu politika, web sitemiz üzerinden paylaşılan bilgilerin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+        <h4>Toplanan Bilgiler</h4>
+        <p>Web sitemizde yer alan iletişim formu aracılığıyla aşağıdaki bilgiler toplanabilir:</p>
+        <ul><li>İsim</li><li>E-posta adresi</li><li>Mesaj içeriği</li></ul>
+        <h4>Bilgilerin Kullanımı</h4>
+        <p>Toplanan bilgiler yalnızca:</p>
+        <ul><li>İletişim taleplerine dönüş yapmak,</li><li>İş birliği ve araştırma süreçlerini yürütmek,</li><li>Kullanıcı deneyimini geliştirmek</li></ul>
+        <p>amacıyla kullanılmaktadır.</p>
+        <h4>Veri Güvenliği</h4>
+        <p>Kullanıcı bilgilerinin güvenliği bizim için önemlidir. Veriler üçüncü taraflarla satılmaz veya paylaşılmaz.</p>
+        <h4>Çerezler (Cookies)</h4>
+        <p>Web sitemiz kullanıcı deneyimini geliştirmek ve temel analiz süreçleri için çerez teknolojilerini kullanabilir.</p>
+        <h4>Üçüncü Taraf Hizmetler</h4>
+        <p>Site içerisinde TradingView gibi üçüncü taraf servisler kullanılabilir. Bu servislerin kendi gizlilik politikaları geçerlidir.</p>
+        <h4>İletişim</h4>
+        <p>Gizlilik politikasıyla ilgili sorularınız için: <a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+
+      <div class="lang-en">
+        <h3 class="modal-title">Privacy Policy</h3>
+        <p class="modal-date">Last Updated: May 2026</p>
+        <p>At Aksoy Prime Equity, we value the privacy of our visitors. This policy explains how information shared through our website is collected, used, and protected.</p>
+        <h4>Information Collected</h4>
+        <p>The following information may be collected through the contact form on our website:</p>
+        <ul><li>Name</li><li>Email address</li><li>Message content</li></ul>
+        <h4>Use of Information</h4>
+        <p>Collected information is used solely for:</p>
+        <ul><li>Responding to contact requests,</li><li>Managing collaboration and research processes,</li><li>Improving user experience</li></ul>
+        <h4>Data Security</h4>
+        <p>The security of user information is important to us. Data is not sold or shared with third parties.</p>
+        <h4>Cookies</h4>
+        <p>Our website may use cookie technologies to improve user experience and for basic analytics purposes.</p>
+        <h4>Third-Party Services</h4>
+        <p>Third-party services such as TradingView may be used on the site. Their own privacy policies apply.</p>
+        <h4>Contact</h4>
+        <p>For questions regarding the privacy policy: <a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Kullanım Koşulları / Terms of Use -->
+  <div class="modal-overlay" id="modalTerms" onclick="handleOverlayClick(event, 'modalTerms')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modalTerms')">&times;</button>
+
+      <div class="lang-tr">
+        <h3 class="modal-title">Kullanım Koşulları</h3>
+        <p class="modal-date">Son Güncelleme: Mayıs 2026</p>
+        <p>Aksoy Prime Equity web sitesini kullanan tüm ziyaretçiler aşağıdaki koşulları kabul etmiş sayılır.</p>
+        <h4>Bilgilendirme Amaçlı İçerik</h4>
+        <p>Web sitesinde yer alan tüm içerikler yalnızca genel bilgilendirme ve piyasa araştırması amacıyla sunulmaktadır. Hiçbir içerik:</p>
+        <ul><li>yatırım tavsiyesi,</li><li>portföy yönetimi hizmeti,</li><li>finansal danışmanlık</li></ul>
+        <p>niteliği taşımaz.</p>
+        <h4>Risk Uyarısı</h4>
+        <p>Forex, CFD, emtia ve endeks işlemleri yüksek risk içerir. Finansal piyasalarda işlem yapmak sermaye kaybına yol açabilir. Geçmiş performans gelecekteki sonuçların garantisi değildir.</p>
+        <h4>Sorumluluk Reddi</h4>
+        <p>Aksoy Prime Equity, site üzerinde paylaşılan bilgi ve analizlerin kullanımından doğabilecek doğrudan veya dolaylı zararlardan sorumlu tutulamaz.</p>
+        <h4>Fikri Mülkiyet</h4>
+        <p>Web sitesinde yer alan tüm içerik, tasarım, metin ve görseller Aksoy Prime Equity'e aittir. İzinsiz kopyalanamaz veya dağıtılamaz.</p>
+        <h4>Değişiklik Hakkı</h4>
+        <p>Aksoy Prime Equity, kullanım koşullarını ve site içeriğini önceden bildirim yapmaksızın güncelleme hakkını saklı tutar.</p>
+        <h4>İletişim</h4>
+        <p>Her türlü soru için: <a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+
+      <div class="lang-en">
+        <h3 class="modal-title">Terms of Use</h3>
+        <p class="modal-date">Last Updated: May 2026</p>
+        <p>All visitors using the Aksoy Prime Equity website are deemed to have accepted the following terms.</p>
+        <h4>Informational Content</h4>
+        <p>All content on the website is provided solely for general information and market research purposes. No content constitutes:</p>
+        <ul><li>investment advice,</li><li>portfolio management services,</li><li>financial advisory services</li></ul>
+        <h4>Risk Warning</h4>
+        <p>Forex, CFD, commodity, and index trading involves high risk. Trading in financial markets can lead to capital losses. Past performance is not a guarantee of future results.</p>
+        <h4>Disclaimer</h4>
+        <p>Aksoy Prime Equity cannot be held liable for any direct or indirect damages arising from the use of information and analyses shared on the site.</p>
+        <h4>Intellectual Property</h4>
+        <p>All content, design, text, and images on the website belong to Aksoy Prime Equity. They may not be copied or distributed without permission.</p>
+        <h4>Right to Modify</h4>
+        <p>Aksoy Prime Equity reserves the right to update the terms of use and site content without prior notice.</p>
+        <h4>Contact</h4>
+        <p>For any questions: <a href="mailto:berke@aksoyprimeequity.com">berke@aksoyprimeequity.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
